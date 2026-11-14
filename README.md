@@ -1,29 +1,43 @@
-# UCALP Informática
+# Licenciatura en Sistemas — UCALP
 
-Repositorio comunitario no oficial de apuntes, ejemplos y trabajos prácticos para estudiantes de informática de la UCALP. Iniciado con material de la Licenciatura en Sistemas, plan 2022, y organizado por materia.
+**Apuntes · Trabajos prácticos · Ejemplos**
+
+[Ver materias](#materias) · [Descargar todo](https://github.com/joaquin-gerez/UCALP-Sistemas/archive/refs/heads/main.zip) · [Proponer una mejora](https://github.com/joaquin-gerez/UCALP-Sistemas/issues)
+
+---
+
+Soy [Joaquín Gerez](https://github.com/joaquin-gerez), estudiante de la Licenciatura en Sistemas en la Universidad Católica de La Plata, plan 2022.
+
+Armé este repo para compartir material que voy preparando durante la carrera y que no quede perdido en una carpeta. La idea es que le sirva a quien esté cursando la misma materia: ver un ejemplo, repasar un tema o tener un punto de partida para entender un TP.
+
+Arranca con Orientación a Objetos II. De a poco iré sumando otras materias; si tenés algo para aportar, también es bienvenido.
 
 ## Materias
 
-- [Orientación a Objetos II](Orientacion_a_Objetos_II/): integrador del Grupo 11, monitoreo ambiental con Observer y Strategy.
+| Materia | Material disponible |
+| --- | --- |
+| [Orientación a Objetos II](Orientacion_a_Objetos_II/) | TP integrador de monitoreo ambiental: Observer y Strategy en Python, diagramas UML, pruebas y guía de estudio. |
 
-## Descargar
+## Cómo descargarlo
 
-Usá **Code → Download ZIP** para descargar todo, o cloná el repositorio:
+Para bajar todo sin usar Git: **Code → Download ZIP**. Dentro de cada materia están las instrucciones para usar su material.
+
+Si preferís clonarlo:
 
 ```sh
-git clone https://github.com/joaquin-gerez/UCALP_INFORMATICA.git
+git clone https://github.com/joaquin-gerez/UCALP-Sistemas.git
 ```
 
-Los trabajos conservan sus notas de revisión, autoría y asistencia. Su publicación no implica entrega ni aprobación académica.
+El [TP del Grupo 11 también tiene su ZIP aparte](Orientacion_a_Objetos_II/Grupo11_Monitoreo_2026-11-12.zip).
 
-## Aportar material
+## ¿Querés sumar algo?
 
-Se reciben mejoras, correcciones y nuevos materiales mediante **Issues** y **Pull Requests**.
+Podés abrir un [issue](https://github.com/joaquin-gerez/UCALP-Sistemas/issues) si encontrás un error, o mandar un pull request con una corrección, un apunte o un ejemplo.
 
-- Usá una carpeta por materia y una subcarpeta por tema o trabajo.
-- Incluí un README con el tema, requisitos e instrucciones de uso.
-- Indicá el año, plan o cátedra cuando sea relevante: las consignas pueden cambiar.
-- Respetá la autoría y las reglas académicas; indicá fuentes y asistencia de IA cuando corresponda.
-- Compartí únicamente material propio o con permiso de publicación. No subas credenciales, datos personales de terceros ni evaluaciones restringidas.
+Para mantenerlo ordenado, usamos una carpeta por materia y otra por trabajo o tema. Con un README corto que explique qué hay y cómo usarlo alcanza. Si depende de un año, plan o cátedra, aclará cuál.
 
-Este espacio no representa oficialmente a la universidad. El material sirve como referencia para estudiar, no para presentar trabajo ajeno como propio.
+Compartí material propio o que tengas permiso para publicar, conservá los créditos y las fuentes, y aclarale al que lo lea si usaste asistencia de IA. No subas datos privados ni evaluaciones de circulación restringida.
+
+---
+
+**Repositorio no oficial.** Puede haber errores y las consignas cambian entre cursadas. Usalo para estudiar y contrastá con tu cátedra; que un trabajo esté acá no significa que esté entregado o aprobado, ni que corresponda presentarlo como propio.
