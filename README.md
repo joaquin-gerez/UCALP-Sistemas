@@ -6,12 +6,6 @@
 
 ---
 
-Soy [Joaquín Gerez](https://github.com/joaquin-gerez), estudiante de la Licenciatura en Sistemas en la Universidad Católica de La Plata, plan 2022.
-
-Armé este repo para compartir material que voy preparando durante la carrera y que no quede perdido en una carpeta. La idea es que le sirva a quien esté cursando la misma materia: ver un ejemplo, repasar un tema o tener un punto de partida para entender un TP.
-
-Arranca con Orientación a Objetos II. De a poco iré sumando otras materias; si tenés algo para aportar, también es bienvenido.
-
 ## Materias
 
 | Materia | Material disponible |
@@ -27,8 +21,6 @@ Si preferís clonarlo:
 ```sh
 git clone https://github.com/joaquin-gerez/UCALP-Sistemas.git
 ```
-
-El [TP del Grupo 11 también tiene su ZIP aparte](Orientacion_a_Objetos_II/Grupo11_Monitoreo_2026-11-12.zip).
 
 ## ¿Querés sumar algo?
 
