@@ -5,7 +5,8 @@
 Aplicación de consola en Python que integra los patrones **Observer** y **Strategy**.
 
 - [Proyecto, instrucciones y documentación](Grupo11_Monitoreo/)
-- [Descargar TP en ZIP](Grupo11_Monitoreo_2026-11-12.zip)
+- [Descargar entregable en ZIP](Grupo11_Monitoreo/consigna/ENTREGABLE_Grupo11_Monitoreo.zip)
+- [Consigna completa y resumen](Grupo11_Monitoreo/consigna/CONSIGNA.md)
 - [Guía de estudio y defensa](Grupo11_Monitoreo/docs/GUIA_ESTUDIO.md)
 - [Diagramas UML](Grupo11_Monitoreo/diagramas/)
 

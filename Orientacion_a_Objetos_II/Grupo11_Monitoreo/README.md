@@ -2,6 +2,12 @@
 
 Aplicación de consola para registrar sensores de temperatura y humedad, notificar sus cambios con **Observer** y evaluar las mediciones con **Strategy**.
 
+## Entregable
+
+[Descargar ZIP para entregar o llevar a la exposición](consigna/ENTREGABLE_Grupo11_Monitoreo.zip).
+
+Incluye código fuente, tres diagramas PDF y un README con los requisitos, las instrucciones y la explicación de Observer y Strategy. Extraer el ZIP y abrir su README para empezar.
+
 ## Ejecutar
 
 Requiere Python 3.10 o superior y solo usa la biblioteca estándar. Desde esta carpeta:
@@ -27,7 +33,7 @@ python3 -B -m unittest discover -s tests -v
 - [`main.py`](main.py): menú y demo.
 - [Guía de estudio](docs/GUIA_ESTUDIO.md): diseño, patrones y ejercicios.
 - [Diagramas UML](diagramas/README.md): clases, secuencia y estados.
-- [Consigna](consigna/TIF-OO2-G11.txt): requisitos del trabajo.
+- [Consigna](consigna/CONSIGNA.md): requisitos del trabajo.
 - [`tests/test_monitoreo.py`](tests/test_monitoreo.py): pruebas del modelo y la consola.
 
 ## Recorrido de la demo
