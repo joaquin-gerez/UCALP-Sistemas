@@ -1,0 +1,90 @@
+Trabajo Final Integrador – Objetos II Grupo N.º 11 
+Contexto: Sistema de monitoreo de condiciones ambientales 
+Una empresa está desarrollando un sistema de monitoreo de condiciones ambientales que 
+permite registrar y controlar las mediciones de temperatura y humedad de distintos espacios. 
+El sistema debe permitir registrar sensores con características básicas, como nombre, 
+ubicación, temperatura y humedad. Para facilitar el monitoreo, se podrá consultar el estado de 
+los sensores y recibir notificaciones cuando se produzcan cambios en las mediciones. 
+Además, el sistema deberá permitir utilizar diferentes estrategias para evaluar las condiciones 
+ambientales, como la evaluación de temperatura o humedad, según los criterios establecidos. 
+El objetivo del trabajo es desarrollar una aplicación sencilla que permita monitorear 
+condiciones ambientales y notificar cambios utilizando los patrones de diseño asignados. 
+1. Patrones de diseño asignados 
+Patrón de comportamiento: Observer 
+El patrón Observer permitirá notificar automáticamente a los distintos observadores cuando 
+se produzca un cambio en las mediciones de un sensor. 
+El sistema deberá: 
+ Tener al menos un sensor que genere cambios en sus mediciones. 
+ Tener al menos dos observadores interesados en recibir notificaciones. 
+ Permitir registrar observadores para recibir notificaciones. 
+ Permitir notificar a los observadores cuando cambien las mediciones del sensor. 
+ Permitir que los observadores reciban información actualizada sobre las condiciones 
+ambientales. 
+Ejemplo: un sensor registra un aumento de temperatura y notifica automáticamente a los 
+observadores registrados, informando la nueva medición. 
+Patrón de comportamiento: Strategy 
+El patrón Strategy permitirá definir diferentes estrategias para evaluar las condiciones 
+ambientales registradas por los sensores. 
+El sistema deberá: 
+ Tener al menos dos estrategias de evaluación diferentes. 
+ Permitir seleccionar una estrategia de evaluación. 
+ Permitir evaluar las mediciones del sensor según la estrategia seleccionada.  Permitir cambiar la estrategia de evaluación sin modificar la estructura principal del 
+sistema. 
+Se podrán implementar las siguientes estrategias: 
+ Evaluación de temperatura. 
+ Evaluación de humedad. 
+Ejemplo: seleccionar la estrategia de evaluación de temperatura para determinar si una 
+medición supera el valor establecido y luego cambiar a la estrategia de humedad para evaluar 
+las condiciones del ambiente. 
+2. Diagramas UML 
+Diagrama de clases 
+Realizar un diagrama de clases que muestre las clases principales del sistema y cómo se 
+relacionan. 
+Como mínimo, deberá incluir: 
+ Sensor. 
+ Observador. 
+ ObservadorConsola. 
+ EstrategiaEvaluacion. 
+ EvaluacionTemperatura. 
+ EvaluacionHumedad. 
+El diagrama debe mostrar los atributos y métodos más importantes, así como las relaciones 
+entre las clases. 
+Diagrama de secuencia 
+Representar el siguiente caso: 
+El usuario modifica la medición de temperatura de un sensor. 
+El diagrama debe mostrar cómo el sensor registra el cambio, cómo se notifica a los 
+observadores registrados y cómo se utiliza la estrategia de evaluación seleccionada para 
+determinar si la medición cumple con las condiciones establecidas. 
+Diagrama de estados 
+Representar los estados por los que puede pasar un sensor durante el monitoreo: 
+ Configurado. 
+ Monitoreando.  Alerta generada. 
+Indicar qué acción provoca el cambio de un estado a otro. 
+3. Implementación 
+Desarrollar una aplicación sencilla que permita: 
+1. Registrar sensores ambientales. 
+2. Registrar observadores interesados en recibir notificaciones. 
+3. Modificar las mediciones de temperatura y humedad de un sensor. 
+4. Notificar a los observadores cuando se produzcan cambios en las mediciones 
+utilizando Observer. 
+5. Seleccionar una estrategia de evaluación utilizando Strategy. 
+6. Mostrar las mediciones registradas y los resultados de las evaluaciones. 
+La aplicación puede realizarse mediante consola. No es necesario desarrollar una interfaz 
+gráfica. 
+4. Entrega y evaluación 
+La entrega deberá incluir: 
+ Código fuente del proyecto. 
+ Diagrama de clases. 
+ Diagrama de secuencia. 
+ Diagrama de estados. 
+ Una breve explicación de cómo se aplicó cada patrón. 
+5. Consideraciones generales 
+ El trabajo debe realizarse en conjunto. 
+ Cada integrante será responsable de implementar el patrón que tiene asignado. 
+ Se puede utilizar una solución sencilla, siempre que funcione correctamente. 
+ No es necesario agregar funcionalidades que no estén indicadas en la consigna. 
+ Se valorará que el código sea claro, ordenado y fácil de comprender. 
+Importante: Observer y Strategy deben formar parte del mismo sistema. No deben 
+implementarse como ejemplos separados. El sistema debe permitir monitorear condiciones 
+ambientales, notificar cambios en las mediciones mediante Observer y evaluar las 
+condiciones registradas utilizando Strategy. 

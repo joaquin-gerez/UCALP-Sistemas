@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1140" viewBox="0 0 1500 1140" role="img">
+<title>UML de clases — Grupo 11</title>
+<defs><marker id="flecha" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#18384c" stroke-width="1.5"/></marker>
+<marker id="herencia" markerWidth="16" markerHeight="16" refX="15" refY="8" orient="auto"><path d="M1,1 L15,8 L1,15 Z" fill="white" stroke="#18384c"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<text x="750" y="32" font-family="DejaVu Sans, sans-serif" font-size="25" fill="#142f41" text-anchor="middle" font-weight="bold">CLASES · estructura del modelo</text>
+<rect x="440" y="60" width="600" height="450" rx="8" fill="#f1f7fa" stroke="#18384c" stroke-width="2"/>
+<text x="740.0" y="90" font-family="DejaVu Sans, sans-serif" font-size="21" fill="#142f41" text-anchor="middle" font-weight="bold">Sensor</text>
+<path d="M440,103 H1040" stroke="#18384c"/>
+<text x="456" y="130" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#142f41" text-anchor="start" font-weight="normal">+ nombre: str; + ubicacion: str</text>
+<text x="456" y="154" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#142f41" text-anchor="start" font-weight="normal">− _temperatura: float; − _humedad: float</text>
+<text x="456" y="178" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#142f41" text-anchor="start" font-weight="normal">− _observadores: list; − _estrategia: EstrategiaEvaluacion</text>
+<text x="456" y="202" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#142f41" text-anchor="start" font-weight="normal">− _estado: Estado; − _resultado: bool | None</text>
+<text x="456" y="226" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#142f41" text-anchor="start" font-weight="normal">+ registrar_observador(observador)</text>
+<text x="456" y="250" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#142f41" text-anchor="start" font-weight="normal">+ quitar_observador(observador)</text>
+<text x="456" y="274" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#142f41" text-anchor="start" font-weight="normal">+ iniciar(): bool</text>
+<text x="456" y="298" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#142f41" text-anchor="start" font-weight="normal">+ cambiar_mediciones(temperatura, humedad): bool</text>
+<text x="456" y="322" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#142f41" text-anchor="start" font-weight="normal">+ cambiar_estrategia(estrategia): bool | None</text>
+<text x="456" y="346" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#142f41" text-anchor="start" font-weight="normal">− _notificar(); − _evaluar(): bool</text>
+<text x="456" y="370" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#142f41" text-anchor="start" font-weight="normal">+ resumen(): str</text>
+<rect x="35" y="70" width="330" height="160" rx="8" fill="#f1f7fa" stroke="#18384c" stroke-width="2"/>
+<text x="200.0" y="100" font-family="DejaVu Sans, sans-serif" font-size="21" fill="#142f41" text-anchor="middle" font-weight="bold">«enumeration» Estado</text>
+<path d="M35,113 H365" stroke="#18384c"/>
+<text x="51" y="140" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#142f41" text-anchor="start" font-weight="normal">CONFIGURADO</text>
+<text x="51" y="164" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#142f41" text-anchor="start" font-weight="normal">MONITOREANDO</text>
+<text x="51" y="188" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#142f41" text-anchor="start" font-weight="normal">ALERTA</text>
+<path d="M440,160 H365" fill="none" stroke="#18384c" stroke-width="2" marker-end="url(#flecha)"/>
+<text x="372" y="145" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#142f41" text-anchor="start" font-weight="normal">estado</text>
+<rect x="40" y="610" width="560" height="135" rx="8" fill="#f1f7fa" stroke="#18384c" stroke-width="2"/>
+<text x="320.0" y="640" font-family="DejaVu Sans, sans-serif" font-size="21" fill="#142f41" text-anchor="middle" font-weight="bold">«abstract» Observador</text>
+<path d="M40,653 H600" stroke="#18384c"/>
+<text x="56" y="680" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#142f41" text-anchor="start" font-weight="normal">+ actualizar(nombre, ubicacion,</text>
+<text x="56" y="704" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#142f41" text-anchor="start" font-weight="normal">  temperatura, humedad) [abstracto]</text>
+<rect x="790" y="610" width="550" height="135" rx="8" fill="#f1f7fa" stroke="#18384c" stroke-width="2"/>
+<text x="1065.0" y="640" font-family="DejaVu Sans, sans-serif" font-size="21" fill="#142f41" text-anchor="middle" font-weight="bold">«abstract» EstrategiaEvaluacion</text>
+<path d="M790,653 H1340" stroke="#18384c"/>
+<text x="806" y="680" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#142f41" text-anchor="start" font-weight="normal">+ evaluar(temperatura, humedad): bool [abstracto]</text>
+<text x="806" y="704" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#142f41" text-anchor="start" font-weight="normal">+ describir(): str [abstracto]</text>
+<path d="M510,510 V555 H320 V610" fill="none" stroke="#18384c" stroke-width="2" marker-end="url(#flecha)"/>
+<text x="250" y="550" font-family="DejaVu Sans, sans-serif" font-size="17" fill="#142f41" text-anchor="start" font-weight="normal">0..* Sensor</text>
+<text x="60" y="590" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#142f41" text-anchor="start" font-weight="normal">suscripciones → 0..* Observador</text>
+<path d="M970,510 V555 H1065 V610" fill="none" stroke="#18384c" stroke-width="2" marker-end="url(#flecha)"/>
+<text x="1080" y="550" font-family="DejaVu Sans, sans-serif" font-size="17" fill="#142f41" text-anchor="start" font-weight="normal">0..* Sensor</text>
+<text x="1090" y="590" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#142f41" text-anchor="start" font-weight="normal">seleccionada → 1</text>
+<rect x="40" y="865" width="560" height="145" rx="8" fill="#f1f7fa" stroke="#18384c" stroke-width="2"/>
+<text x="320.0" y="895" font-family="DejaVu Sans, sans-serif" font-size="21" fill="#142f41" text-anchor="middle" font-weight="bold">ObservadorConsola</text>
+<path d="M40,908 H600" stroke="#18384c"/>
+<text x="56" y="935" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#142f41" text-anchor="start" font-weight="normal">+ identificador: str</text>
+<text x="56" y="959" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#142f41" text-anchor="start" font-weight="normal">+ actualizar(nombre, ubicacion,</text>
+<text x="56" y="983" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#142f41" text-anchor="start" font-weight="normal">  temperatura, humedad)</text>
+<rect x="680" y="865" width="375" height="145" rx="8" fill="#f1f7fa" stroke="#18384c" stroke-width="2"/>
+<text x="867.5" y="895" font-family="DejaVu Sans, sans-serif" font-size="21" fill="#142f41" text-anchor="middle" font-weight="bold">EvaluacionTemperatura</text>
+<path d="M680,908 H1055" stroke="#18384c"/>
+<text x="696" y="935" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#142f41" text-anchor="start" font-weight="normal">+ limite: float = 30</text>
+<text x="696" y="959" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#142f41" text-anchor="start" font-weight="normal">+ evaluar(t, h): bool</text>
+<text x="696" y="983" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#142f41" text-anchor="start" font-weight="normal">+ describir(): str</text>
+<rect x="1090" y="865" width="375" height="145" rx="8" fill="#f1f7fa" stroke="#18384c" stroke-width="2"/>
+<text x="1277.5" y="895" font-family="DejaVu Sans, sans-serif" font-size="21" fill="#142f41" text-anchor="middle" font-weight="bold">EvaluacionHumedad</text>
+<path d="M1090,908 H1465" stroke="#18384c"/>
+<text x="1106" y="935" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#142f41" text-anchor="start" font-weight="normal">+ limite: float = 70</text>
+<text x="1106" y="959" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#142f41" text-anchor="start" font-weight="normal">+ evaluar(t, h): bool</text>
+<text x="1106" y="983" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#142f41" text-anchor="start" font-weight="normal">+ describir(): str</text>
+<path d="M320,865 V745" fill="none" stroke="#18384c" stroke-width="2" marker-end="url(#herencia)"/>
+<path d="M867,865 V800 H1000 V745" fill="none" stroke="#18384c" stroke-width="2" marker-end="url(#herencia)"/>
+<path d="M1277,865 V800 H1130 V745" fill="none" stroke="#18384c" stroke-width="2" marker-end="url(#herencia)"/>
+<text x="50" y="1060" font-family="DejaVu Sans, sans-serif" font-size="20" fill="#142f41" text-anchor="start" font-weight="normal">+ público · − interno · triángulo vacío: herencia hacia ABC · flecha simple: asociación</text>
+<text x="50" y="1095" font-family="DejaVu Sans, sans-serif" font-size="19" fill="#142f41" text-anchor="start" font-weight="normal">t/h abrevian temperatura/humedad. Propiedades de lectura y auxiliares omitidos. Inicio: exige 2 observadores.</text>
+</svg>

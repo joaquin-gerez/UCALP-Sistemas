@@ -1,0 +1,23 @@
+sequenceDiagram
+    actor U as Usuario
+    participant C as Consola
+    participant S as Sensor Sala A
+    participant O1 as Operador (ObservadorConsola)
+    participant O2 as Supervisor (ObservadorConsola)
+    participant E as EvaluacionTemperatura
+    Note over S,E: Precondición: iniciado a 22 °C / 45 %, dos observadores, criterio temperatura >30 °C
+    U->>C: Cambiar temperatura a 31 °C
+    C->>S: cambiar_mediciones(31, 45)
+    S->>S: Validar y guardar temperatura=31, humedad=45
+    S->>S: _notificar()
+    S->>O1: actualizar("Sala A", "Planta baja", 31, 45)
+    S->>O2: actualizar("Sala A", "Planta baja", 31, 45)
+    Note over O1,O2: Cada receptor imprime su aviso con datos nuevos
+    S->>S: _evaluar()
+    S->>E: evaluar(31, 45)
+    E-->>S: True (31 >30)
+    S->>S: Guardar resultado=True y estado=Alerta generada
+    S-->>C: True
+    C->>S: resumen()
+    S-->>C: Datos + criterio + ALERTA + estado
+    C-->>U: Mostrar resultado
